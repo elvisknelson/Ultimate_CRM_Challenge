@@ -1,3 +1,3 @@
 class Customer < ApplicationRecord
-  validates :full_name presence: true
+  validates :Full_Name, presence: true
 end
