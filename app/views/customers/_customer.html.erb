@@ -3,7 +3,7 @@
     <h4 class="card-header text-white"><%= customer.Full_Name %></h4>
     <img class="card-img" src=<%= image_url(customer.Image) %>/>
     <p class="card-text pl-2"><%= customer.Phone_Number %></p>
-    <p class="card-text pl-2"><%= customer.Email_Address %></p>
+    <p class="card-text pl-2"><%= customer.Email_Address != "" ? customer.Email_Address : "Unknown" %></p>
     <p class="card-text pl-2"><%= customer.Notes %></p>
   </div>
 </div>
